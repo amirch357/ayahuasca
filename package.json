@@ -4,16 +4,33 @@
   "private": true,
   "dependencies": {
     "@metamodules/postgres": "^1.2.1",
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
     "deploy-node-app": "^1.4.3",
     "dotenv": "^8.0.0",
+    "express": "^4.18.2",
+    "express-validator": "^6.15.0",
+    "helmet": "^6.0.1",
+    "http": "^0.0.1-security",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.9.1",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-scripts": "3.0.1",
+    "stripe": "^12.1.1"
   },
   "devDependencies": {
-    "concurrently": "^4.1.0",
-    "nodemon": "^1.19.1",
     "babel-eslint": "10.0.1",
+    "concurrently": "^4.1.0",
     "cross-spawn": "^6.0.5",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
@@ -23,15 +40,13 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-standard": "^4.0.0",
+    "nodemon": "^1.19.4",
     "prettier": "^1.17.1"
   },
   "scripts": {
     "start": "bash bin/dev.sh",
     "build": "react-scripts build",
-    "deploy": "deploy-node-app",
-    "test": "react-scripts test",
-    "eject-www": "react-scripts eject",
-    "psql": "export $(cat .env | xargs) && PGPASSWORD=${POSTGRES_PASSWORD} psql -h ${POSTGRES_SERVICE_HOST} -p ${POSTGRES_SERVICE_PORT} -U ${POSTGRES_USER} ${POSTGRES_DB}"
+    "dev": "nodemon ./index.js localhost 3007"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -56,7 +71,9 @@
       "registry": "",
       "type": "spa",
       "isPublic": false
-    }
+    },
+    "author": "Ishtiaq Amjad",
+    "license": "ISC"
   },
   "proxy": "http://localhost:4000"
 }
