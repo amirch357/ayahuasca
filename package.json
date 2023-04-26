@@ -44,7 +44,7 @@
     "prettier": "^1.17.1"
   },
   "scripts": {
-    "start": "bash bin/dev.sh",
+    "start": "node ./index.js",
     "build": "react-scripts build",
     "dev": "nodemon ./index.js localhost 3007"
   },
