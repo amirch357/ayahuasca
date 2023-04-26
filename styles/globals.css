@@ -1,0 +1,115 @@
+html,
+body {
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+
+#__next {
+  height: 100%;
+}
+
+code {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.1rem 0.4rem;
+  font-size: 90%;
+  color: #d400ff;
+  border-radius: 0.1335rem;
+}
+
+code:not([class*='language-']):before,
+code:not([class*='language-']):after {
+  content: '`';
+}
+
+code[class*='language-'] {
+  padding: 0;
+}
+
+
+.fab {
+  background-color: #563062 !important;
+  color: #fff !important;
+}
+
+.fab:hover {
+  background-color: #fac13b !important;
+}
+
+.slick-dots li {
+  margin: 0px 0px !important;
+}
+
+.slick-dots li button:before {
+  opacity: 0 !important;
+  color: transparent !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0 !important;
+  color: transparent !important;
+}
+
+.primary {
+  color: #fff !important;
+  margin-right: 4px !important;
+  font-size: 12px !important;
+  padding: 1px !important;
+  background-color: #8f37e8de !important;
+}
+
+.primary:hover {
+  text-decoration: none;
+  background-color: #804BDF;
+  box-shadow: 0px 6px 18px -3px rgba(58, 53, 65, 0.56);
+}
+
+.secondry {
+  color: #fff !important;
+  margin-right: 2px !important;
+  font-size: 12px !important;
+  padding: 1px !important;
+  background-color: #006c2b !important;
+}
+
+.secondry:hover {
+  text-decoration: none;
+  background-color: #35a52a;
+  box-shadow: 0px 6px 18px -3px rgba(39, 75, 36, 0.56);
+}
+
+.danger {
+  color: #fff !important;
+  margin-right: 2px !important;
+  font-size: 12px !important;
+  padding: 1px !important;
+  background-color: #db0000 !important;
+}
+
+.danger:hover {
+  text-decoration: none;
+  background-color: #d62000 !important;
+  box-shadow: 0px 6px 18px -3px rgba(94, 60, 41, 0.56);
+}
+
+.input {
+  font: inherit;
+  letter-spacing: inherit;
+  color: currentColor;
+  padding: 4px 0 5px;
+  border: 0;
+  background: none;
+  height: 3em !important;
+  margin: 0;
+  display: block;
+  min-width: 0;
+  width: 100%;
+  animation-duration: 10ms;
+  padding: 16.5px 14px !important;
+  border-radius: 6px;
+  box-sizing: border-box;
+  border: 2px solid #d3d2d5;
+}
+.input:focus {
+  outline: none !important;
+  border: 2px solid #9155fd !important;
+}

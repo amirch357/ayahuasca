@@ -1,0 +1,85 @@
+.booking_bg {
+    color: #fff;
+    padding: 100px 0 60px 0;
+    background-color: #563062;
+    overflow-y: auto;
+}
+
+.heading1 {
+    width: 18%;
+}
+
+.heading2 {
+    color: #fff !important;
+    font-size: 36px !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.span {
+    color: #fac13b !important;
+}
+
+@media screen and (max-width: 500px) {
+    .heading1 {
+        font-size: 32px !important;
+    }
+
+    .heading2 {
+        font-size: 24px !important;
+    }
+}
+
+.formPart {
+    padding: 100px 0 60px 0 !important;
+}
+.title{
+    color: #563062 !important;
+    text-transform: capitalize;
+}
+.form input,
+.form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.form input:focus,
+.form textarea:focus {
+    border-color: #f82249;
+    box-shadow: none;
+}
+.custom button {
+    color: #fff !important;
+    background-color: #563062 !important;
+    
+    margin: 0 0 0 15px !important;
+    border-radius: 50px !important;
+    border: 2px solid #563062 !important;
+    transition: all ease-in-out 0.3s !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    text-transform: capitalize !important;
+    background: #563062 !important;
+}
+
+.custom button:hover {
+    background: none !important;
+    color: #563062 !important;
+    outline: none !important;
+    text-decoration: none !;
+}
+
+.custom button span{
+    font-size: 18px !important;
+    color: #563062;
+    background-image: none !important;
+    padding: 0 40px;
+    box-shadow: none !important;
+}
+.custom button span:hover{
+    color: #563062 !important;
+}

@@ -1,0 +1,215 @@
+.navbar {
+    height: 90px;
+    font-size: 18px;
+    background-color: #fac13b;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    font-size: 18px;
+    letter-spacing: 0px;
+    overflow: hidden;
+}
+
+.shrink {
+    height: 70px;
+
+}
+
+.logo {
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
+.closecon {
+    color: #fff !important;
+    background: transparent;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .logo {
+        max-width: 220px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        max-width: 180px !important;
+    }
+}
+
+.togglemenu li {
+    white-space: nowrap;
+    padding: 10px 0 10px 12px;
+}
+
+.navlink {
+    font-family: "Open Sans", sans-serif !important;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 6px 4px !important;
+    border-radius: 0%;
+    text-transform: capitalize;
+    position: relative;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #563062;
+    white-space: nowrap;
+    transition: 0.3s;
+
+}
+
+.navlink:hover {
+    color: #ffffff;
+}
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -6px;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom left;
+    transition: transform 0.50s ease-out;
+}
+
+.navlink:hover::after {
+    transform: scaleX(1);
+}
+
+@media screen and (max-width: 1300px) {
+    .navlink {
+        padding: 6px 4px !important;
+    }
+}
+
+.active a {
+    color: #fff !important;
+}
+
+.active a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+     transform: scaleX(0);
+    bottom: -6px;
+    left: 0;
+    background-color: white;
+    visibility: visible;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.active a::after {
+    transform: scaleX(1);
+}
+
+
+.read_more_btn {
+    color: #fff !important;
+    background-color: #563062 !important;
+    padding: 7px 22px !important;
+    margin: 0 0 0 15px !important;
+    border-radius: 50px !important;
+    border: 2px solid #563062 !important;
+    transition: all ease-in-out 0.3s !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+    text-transform: capitalize !important;
+}
+
+.read_more_btn:hover {
+    background: none !important;
+    color: #563062 !important;
+    outline: none !important;
+    text-decoration: none !;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .navlink {
+        color: #563062;
+        position: relative !important;
+    }
+
+    .navlink:hover {
+        color: #fac13b !important;
+    }
+
+    .navlink::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #fac13b !important;
+        transform-origin: bottom left;
+        transition: transform 0.50s ease-out;
+    }
+
+    .navlink:hover::after {
+        transform: scaleX(1);
+    }
+    .active .navlink {
+        color: #fac13b !important;
+    }
+    
+    .active .navlink::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+         transform: scaleX(0);
+        bottom: -6px;
+        left: 0;
+        background-color: white;
+        visibility: visible;
+        transition: all 0.3s ease-in-out 0s;
+        color: #fac13b;
+    }
+    
+    .active .navlink::after {
+        transform: scaleX(1);
+    }
+}
+
+.navlist {
+    display: flex;
+    list-style: none;
+    color: #fac13b;
+    padding: 0;
+    align-items: flex-end;
+}
+
+.togglemenu {
+    padding-left: 1rem !important;
+    margin-bottom: 9px;
+}
+
+.togbtn {
+    display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    .togglemenu {
+        display: none !important;
+    }
+
+    .togbtn {
+        display: block !important;
+    }
+}

@@ -1,0 +1,138 @@
+.contact {
+    padding: 60px 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    background: #fff;
+}
+
+.section_header {
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section_header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: #fac13b;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.section_header h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.section_header p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: #5d5d5d;
+}
+
+.contact_info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    .contact .contact_address,
+    .contact .contact_phone,
+    .contact .contact_email {
+        padding: 20px 0;
+    }
+}
+
+.contact .contact_address,
+.contact .contact_phone,
+.contact .contact_email {
+    margin-bottom: 20px;
+}
+
+.contact .contact_info svg {
+    font-size: 38px;
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #fdbf4e;
+}
+
+.contact .contact_info h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #563260;
+}
+
+.contact .contact_info address,
+.contact .contact_info p {
+    margin-bottom: 0;
+    color: #563260;
+    text-align: center;
+}
+
+
+
+.contact .contact_address,
+.contact .contact_phone,
+.contact .contact_email {
+    margin-bottom: 20px;
+}
+
+.contact .contact_info a {
+    color: #563260;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+.contact .contact_info a:hover {
+    color: #fdbf4e;
+}
+
+
+@media (min-width: 768px) {
+    .contact .contact_phone {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+    }
+}
+
+.contact input,
+.contact textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    border-color: #f82249;
+    box-shadow: none;
+}
+
+.contact .btn_msg {
+    text-transform: capitalize;
+    background: #563260;
+    border: 0;
+    padding: 10px 40px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.contact .btn_msg:hover {
+    background: #fdbf4e;
+}
