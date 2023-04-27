@@ -4,8 +4,9 @@ const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const helmet = require('helmet');
 const morgan = require('morgan');
+const serverless = require("serverless-http")
 
-const db =  require('./db');
+const db =  require('../db');
 db;
 const app = express();
 app.use(helmet());
@@ -26,11 +27,12 @@ app.use(cors({
 }));
 
 app.use(morgan('combined'))
-const AdminRoutes = require('./routes/AdminRoutes')
+const AdminRoutes = require('../routes/AdminRoutes')
 app.use(AdminRoutes);
 
 
-const port = 3007;
-app.listen(port, () => {
-  console.log(`Application is start on port: ${port}`)
-});
+// const port = 3007;
+// app.listen(port, () => {
+//   console.log(`Application is start on port: ${port}`)
+// });
+module.exports.handler=serverless(app)

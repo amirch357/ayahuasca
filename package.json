@@ -21,11 +21,13 @@
     "mongodb": "^5.1.0",
     "mongoose": "^7.0.3",
     "morgan": "^1.10.0",
+    "netlify-lambda": "^2.0.16",
     "nodemailer": "^6.9.1",
     "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
+    "serverless-http": "^3.2.0",
     "stripe": "^12.1.1"
   },
   "devDependencies": {
@@ -44,9 +46,9 @@
     "prettier": "^1.17.1"
   },
   "scripts": {
-    "start": "node ./index.js",
-    "build": "react-scripts build",
-    "dev": "nodemon ./index.js localhost 3007"
+    "start": "nodemon ./functions/index.js",
+    "build": "react-scripts build"
+    
   },
   "eslintConfig": {
     "extends": "react-app"

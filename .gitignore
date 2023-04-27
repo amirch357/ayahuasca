@@ -21,3 +21,6 @@
 # used by deploy-node-app
 tmp/
 secrets/
+
+# Local Netlify folder
+.netlify
